@@ -39,10 +39,6 @@ void CreaLista(elemento** primo){
     while(strcmp(ctrl,"n")){
         aggiungiElementoTesta(primo);
         
-        if(primo==NULL){
-            fprintf(stderr,"Errore nell'aggiunta di un elemento");
-            exit(1);
-        }
         printf("Vuoi aggiungere altri elementi alla lista? (s/n): ");
         scanf("%s",ctrl);
         printf("\n");
